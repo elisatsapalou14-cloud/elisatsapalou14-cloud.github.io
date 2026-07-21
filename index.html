@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elisa Tsapalou — Strategy & Operations</title>
+<style>
+  :root {
+    --dark: #1a1a2e;
+    --mid: #2c2c4a;
+    --accent: #4a86e8;
+    --light: #f5f5f7;
+    --text: #333;
+    --muted: #666;
+    --border: #e0e0e0;
+    --tag-bg: #eef2ff;
+    --tag-text: #3a5bbf;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--text); background: #fff; line-height: 1.6; }
+
+  /* Header */
+  header {
+    background: var(--dark);
+    color: #fff;
+    padding: 60px 40px 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .avatar {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem; font-weight: 700; color: #fff;
+    flex-shrink: 0;
+  }
+  .header-text h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+  .header-text h2 { font-size: 1.1rem; font-weight: 400; color: #aab4d4; margin-top: 4px; }
+  .header-links { margin-top: 14px; display: flex; gap: 16px; flex-wrap: wrap; }
+  .header-links a {
+    color: #aab4d4; text-decoration: none; font-size: 0.875rem;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .header-links a:hover { color: #fff; }
+
+  /* Layout */
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  .main { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; padding: 48px 24px; max-width: 900px; margin: 0 auto; }
+
+  /* Sections */
+  section { margin-bottom: 36px; }
+  h3 {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 16px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  p { color: var(--text); font-size: 0.95rem; margin-bottom: 12px; }
+
+  /* Experience */
+  .job { margin-bottom: 24px; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; }
+  .job-title { font-weight: 700; font-size: 0.95rem; }
+  .job-company { color: var(--accent); font-size: 0.9rem; font-weight: 600; }
+  .job-period { font-size: 0.8rem; color: var(--muted); }
+  .job-location { font-size: 0.8rem; color: var(--muted); }
+  .job ul { margin-top: 8px; padding-left: 18px; }
+  .job li { font-size: 0.875rem; color: #444; margin-bottom: 4px; }
+
+  /* Tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tag {
+    background: var(--tag-bg); color: var(--tag-text);
+    font-size: 0.75rem; font-weight: 600;
+    padding: 3px 10px; border-radius: 20px;
+  }
+
+  /* Sidebar */
+  .sidebar section { margin-bottom: 28px; }
+  .sidebar-item { font-size: 0.875rem; color: #444; margin-bottom: 6px; }
+  .sidebar-item strong { display: block; font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-bottom: 1px; }
+
+  /* Skills */
+  .skill-group { margin-bottom: 14px; }
+  .skill-label { font-size: 0.78rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .skill-bar-wrap { background: #eee; border-radius: 4px; height: 5px; }
+  .skill-bar { background: var(--accent); height: 5px; border-radius: 4px; }
+
+  /* Footer */
+  footer { background: var(--dark); color: #aab4d4; text-align: center; padding: 24px; font-size: 0.8rem; }
+
+  @media (max-width: 700px) {
+    .main { grid-template-columns: 1fr; padding: 32px 16px; }
+    header { flex-direction: column; padding: 40px 20px 36px; gap: 20px; }
+    .header-text h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="avatar">ET</div>
+  <div class="header-text">
+    <h1>Elisa Tsapalou</h1>
+    <h2>Strategy &amp; Operations Leader · Amsterdam</h2>
+    <div class="header-links">
+      <a href="mailto:elisa.tsapalou14@gmail.com">✉ elisa.tsapalou14@gmail.com</a>
+      <a href="https://linkedin.com/in/elisa-tsapalou" target="_blank">⟶ LinkedIn</a>
+      <span style="color:#6a7aa4; font-size:0.875rem;">📍 Amsterdam, Netherlands</span>
+    </div>
+  </div>
+</header>
+
+<div class="main">
+  <!-- Left: Main content -->
+  <div>
+
+    <section>
+      <h3>About</h3>
+      <p>Strategy and Operations leader with 9+ years of experience scaling operations across logistics, tech, and supply chain. Proven track record building and leading high-performing teams, driving data-informed decisions, and translating complex business challenges into operational clarity.</p>
+      <p>Based in Amsterdam. Open to senior S&O, Chief of Staff, and Head of Operations roles at growth-stage and scale-up companies.</p>
+    </section>
+
+    <section>
+      <h3>Experience</h3>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Senior Manager, Client Onboarding &amp; Revenue Management</span>
+          <span class="job-period">2024 – present</span>
+        </div>
+        <div class="job-header">
+          <span class="job-company">Flexport</span>
+          <span class="job-location">Amsterdam</span>
+        </div>
+        <ul>
+          <li>Led, mentored and developed a 30+ FTE EMEA team across a EUR 80M portfolio, setting direction, building capability and driving cross-functional execution from diagnosis to measurable outcome</li>
+          <li>Led company-wide AI adoption programme: diagnosed highest-impact use cases, built the business case and coordinated rollout with Product and Engineering</li>
+          <li>Recovered EUR 1.3M in financial leakage by diagnosing systemic process failures and designing corrective governance mechanisms across multiple functions</li>
+          <li>Reduced cost-to-serve by 7% through workflow automation; built dashboards tracking revenue, onboarding performance and operational health for senior leadership</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Team Leadership</span><span class="tag">Revenue Management</span>
+          <span class="tag">SQL / Looker</span><span class="tag">AI Adoption</span><span class="tag">OKRs</span>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Manager, Partner Network</span>
+          <span class="job-period">2022 – 2024</span>
+        </div>
+        <div class="job-header">
+          <span class="job-company">Flexport</span>
+          <span class="job-location">Amsterdam</span>
+        </div>
+        <ul>
+          <li>Built Flexport's EMEA partner operations function from scratch: designed the operating model, go-to-market onboarding process and performance management system while hiring, mentoring and developing a 10 FTE team across 40+ partners</li>
+          <li>Designed OKR and KPI frameworks with SQL-driven scorecards, achieving 98% on-time execution and 20% performance uplift across the partner network</li>
+          <li>Managed cross-functional stakeholder relationships across Commercial, Product, Tech and Finance, influencing outcomes without direct authority</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Partner Network</span><span class="tag">Go-to-Market</span>
+          <span class="tag">Vendor Management</span><span class="tag">KPI Frameworks</span>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Manager, Omnichannel Operations</span>
+          <span class="job-period">2021 – 2022</span>
+        </div>
+        <div class="job-header">
+          <span class="job-company">CH Robinson / TMC</span>
+          <span class="job-location">Amsterdam</span>
+        </div>
+        <ul>
+          <li>Managed a team of 6 and owned end-to-end operational performance for a strategic global enterprise account across EMEA</li>
+          <li>Built SQL-based capacity forecasting tool reducing reactive firefighting and improving execution accuracy across the EMEA network</li>
+          <li>Improved on-time delivery by 10% through structured process improvement and cross-functional alignment across carrier, warehouse and commercial teams</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Transport Ops</span><span class="tag">Carrier Management</span>
+          <span class="tag">EMEA</span><span class="tag">Process Improvement</span>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Junior Manager, Buying Operations</span>
+          <span class="job-period">2018 – 2021</span>
+        </div>
+        <div class="job-header">
+          <span class="job-company">PVH Corp (Calvin Klein / Tommy Hilfiger)</span>
+          <span class="job-location">Amsterdam</span>
+        </div>
+        <ul>
+          <li>Managed vendor performance end-to-end from production to delivery at the local warehouse across all EMEA flows, coordinating closely with design and merchandising teams</li>
+          <li>Managed vendor KPIs across 10K+ SKUs annually; delivered a 15% reduction in stockouts through structured process improvement</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">Buying Ops</span><span class="tag">Vendor KPIs</span>
+          <span class="tag">EMEA Sourcing</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">MSc Transport &amp; Supply Chain Management</span>
+          <span class="job-period">2015 – 2016</span>
+        </div>
+        <div class="job-company">Vrije Universiteit Amsterdam</div>
+      </div>
+      <div class="job" style="margin-top:12px">
+        <div class="job-header">
+          <span class="job-title">BSc Computer Science</span>
+          <span class="job-period">2008 – 2013</span>
+        </div>
+        <div class="job-company">University of Macedonia, Thessaloniki</div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Right: Sidebar -->
+  <div class="sidebar">
+
+    <section>
+      <h3>Core Skills</h3>
+      <div class="skill-group">
+        <div class="skill-label">Strategy &amp; Operations</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Team Leadership (30+ FTE)</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">SQL &amp; Data Analytics</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Vendor &amp; Partner Management</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">OKR &amp; KPI Frameworks</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-label">Stakeholder Management</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Tools</h3>
+      <div class="tags" style="margin-top:0">
+        <span class="tag">SQL</span>
+        <span class="tag">Looker</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Salesforce</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">CRM / TMS</span>
+        <span class="tag">Jira</span>
+      </div>
+    </section>
+
+    <section>
+      <h3>Languages</h3>
+      <div class="sidebar-item"><strong>Greek</strong>Native</div>
+      <div class="sidebar-item"><strong>English</strong>Advanced</div>
+      <div class="sidebar-item"><strong>German</strong>Intermediate</div>
+      <div class="sidebar-item"><strong>Dutch</strong>Elementary</div>
+    </section>
+
+    <section>
+      <h3>Location</h3>
+      <div class="sidebar-item">Amsterdam, Netherlands<br><span style="color:var(--muted);font-size:0.8rem">Open to hybrid roles in NL</span></div>
+    </section>
+
+    <section>
+      <h3>Interests</h3>
+      <div class="tags" style="margin-top:0">
+        <span class="tag">Pilates</span>
+        <span class="tag">Running</span>
+        <span class="tag">Piano</span>
+        <span class="tag">Volunteering</span>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Elisa Tsapalou · Amsterdam · Strategy &amp; Operations
+</footer>
+
+</body>
+</html>
 
